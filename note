@@ -1,0 +1,77 @@
+nmiah@raspberrypi:~/pirate-game $ python3 pirate_mole_game.py 
+pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+HARDWARE: Initialized and listening on /dev/input/event0...
+Fatal Python error: pygame_parachute: (pygame parachute) Segmentation Fault
+Python runtime state: initialized
+
+Current thread 0x0000007f89bca180 (most recent call first):
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 105 in _load_and_scale
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 94 in __init__
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 176 in <listcomp>
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 175 in initialize_game_state
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 465 in run
+  File "/usr/lib/python3.11/threading.py", line 1038 in _bootstrap_inner
+  File "/usr/lib/python3.11/threading.py", line 995 in _bootstrap
+
+Thread 0x0000007f8b3fa180 (most recent call first):
+  File "/usr/lib/python3/dist-packages/lgpio.py", line 542 in run
+  File "/usr/lib/python3.11/threading.py", line 1038 in _bootstrap_inner
+  File "/usr/lib/python3.11/threading.py", line 995 in _bootstrap
+
+Thread 0x0000007fb41214c0 (most recent call first):
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1681 in get_resource_stream
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1207 in resource_stream
+  File "/usr/lib/python3/dist-packages/pygame/pkgdata.py", line 68 in getResource
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 303 in draw_health_bar
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 721 in main
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 794 in <module>
+
+Extension modules: pygame.base, pygame.constants, pygame.rect, pygame.rwobject, pygame.surflock, pygame.color, pygame.bufferproxy, pygame.math, pygame.surface, pygame.display, pygame.draw, pygame.event, pygame.imageext, pygame.image, pygame.joystick, pygame.key, pygame.mouse, pygame.time, pygame.mask, pygame.pixelcopy, pygame.transform, pygame.font, pygame.mixer_music, pygame.mixer, pygame.scrap, numpy.core._multiarray_umath, numpy.core._multiarray_tests, numpy.linalg._umath_linalg, numpy.fft._pocketfft_internal, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator, evdev._input, evdev._uinput, pygame._freetype, _lgpio (total: 42)
+Aborted
+nmiah@raspberrypi:~/pirate-game $ 
+
+
+nmiah@raspberrypi:~/pirate-game $ python3 pirate_mole_game.py 
+pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+HARDWARE: Initialized and listening on /dev/input/event0...
+Cleaning up threads and Pygame resources.
+Fatal Python error: pygame_parachute: (pygame parachute) Segmentation Fault
+Python runtime state: initialized
+
+Current thread 0x0000007f8bfff180 (most recent call first):
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 105 in _load_and_scale
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 94 in __init__
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 176 in <listcomp>
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 175 in initialize_game_state
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 465 in run
+  File "/usr/lib/python3.11/threading.py", line 1038 in _bootstrap_inner
+  File "/usr/lib/python3.11/threading.py", line 995 in _bootstrap
+
+Thread 0x0000007f99d5f180 (most recent call first):
+  File "/usr/lib/python3/dist-packages/lgpio.py", line 542 in run
+  File "/usr/lib/python3.11/threading.py", line 1038 in _bootstrap_inner
+  File "/usr/lib/python3.11/threading.py", line 995 in _bootstrap
+
+Thread 0x0000007fbaa7b4c0 (most recent call first):
+  File "/usr/local/lib/python3.11/dist-packages/plasmalights-2.0.2-py3.11.egg/plasma/apa102.py", line 63 in _sof
+  File "/usr/local/lib/python3.11/dist-packages/plasmalights-2.0.2-py3.11.egg/plasma/apa102.py", line 82 in show
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 569 in stop
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 785 in main
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 794 in <module>
+
+Extension modules: pygame.base, pygame.constants, pygame.rect, pygame.rwobject, pygame.surflock, pygame.color, pygame.bufferproxy, pygame.math, pygame.surface, pygame.display, pygame.draw, pygame.event, pygame.imageext, pygame.image, pygame.joystick, pygame.key, pygame.mouse, pygame.time, pygame.mask, pygame.pixelcopy, pygame.transform, pygame.font, pygame.mixer_music, pygame.mixer, pygame.scrap, numpy.core._multiarray_umath, numpy.core._multiarray_tests, numpy.linalg._umath_linalg, numpy.fft._pocketfft_internal, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator, evdev._input, evdev._uinput, pygame._freetype, _lgpio (total: 42)
+Aborted
+
+nmiah@raspberrypi:~/pirate-game $ python pirate_mole_game.py 
+pygame 2.1.2 (SDL 2.26.5, Python 3.11.2)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Traceback (most recent call last):
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 578, in <module>
+    main()
+  File "/home/nmiah/pirate-game/pirate_mole_game.py", line 405, in main
+    initialize_fleet_structure()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'initialize_fleet_structure' is not defined
+nmiah@raspberrypi:~/pirate-game $ 
