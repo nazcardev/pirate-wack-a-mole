@@ -848,7 +848,7 @@ def main():
                 
             elif not game_running:
                 # START SCREEN (SINGLE CENTRAL SHEER BOX)
-                text = "PRESS '5' TO START BATTLE"
+                text = "PRESS 'Green' TO START BATTLE"
                 
                 # 1. Render text and get rect
                 text_surface = font_medium.render(text, True, WHITE)
