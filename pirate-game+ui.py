@@ -321,7 +321,7 @@ class Cannon(pygame.sprite.Sprite):
         except:
             bar_font = pygame.font.Font(None, 24)
 
-        text_content = f"FORTRESS HP: {PLAYER_FORTRESS['health']:.1f}"
+        text_content = f"Pirate Ship HP: {PLAYER_FORTRESS['health']:.1f}"
         
         # Calculate Y position: Below the bar (y + BAR_HEIGHT + padding)
         text_y_start = y + BAR_HEIGHT + 5 
@@ -802,7 +802,7 @@ def main():
                     color = WHITE
                 
                 score_text = f"FINAL SCORE: {last_game_score}"
-                prompt_text = "PRESS ANY BUTTON TWICE TO CONTINUE"
+                prompt_text = "PRESS ANY BUTTON TO CONTINUE"
 
                 # 2. Render surfaces to get dimensions
                 text_surface_large = font_large.render(message, True, color)
